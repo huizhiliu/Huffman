@@ -79,10 +79,8 @@
 	    		while(father != -1) {
 	    			if (_arr[father].lchild === current) {
 	    				code.unshift('0')
-	    				// console.log(code)
 	    			}else {
 	    				code.unshift('1')
-	    				// console.log(code)
 	    			}
 	    			current = father
 	    			father = _arr[current].parent
