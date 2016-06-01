@@ -1,0 +1,26 @@
+{
+  "devDependencies": {
+    "mocha": "^2.5.3",
+    "should": "^9.0.0"
+  },
+  "name": "huffman",
+  "version": "1.0.0",
+  "main": "huffman.js",
+  "dependencies": {
+    "assert": "^1.4.1"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shineliuhzz/Huffman.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shineliuhzz/Huffman/issues"
+  },
+  "homepage": "https://github.com/shineliuhzz/Huffman#readme",
+  "description": ""
+}
