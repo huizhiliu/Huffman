@@ -1,11 +1,23 @@
-	//树的叶子节点个数
-    const n = process.argv[2]
+	
+    const str = "Chongqing University of Posts and Telecommunications"
     //将权重以数组的形式存储起来
+    let _str = str.toLowerCase().replace(/\s+/g,"") //转化成小写并且去除空格
+    //树的叶子节点个数
+    const n = _str.length   
+    let unq = {}
+    _str.split("").forEach(function(item) {
+        if (!(item in unq)) {
+            unq[item] = 1
+        }else {
+            unq[item] ++
+        }
+    })
+    console.log(unq)
     let arr = []
-    for (let i = 0; i < n; i++) {
-    	arr.push(process.argv[i+3])
+    for(let key in unq) {
+        arr.push(unq[key])
     }
-    //select出最小的两个数字
+    // select出最小的两个数字
     let select_min = (_arr, k, min1, min2) => {
         min1 = min(_arr,k)
         min2 = min(_arr,k)
